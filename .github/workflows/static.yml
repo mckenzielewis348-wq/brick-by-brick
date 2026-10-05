@@ -45,7 +45,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.url }}
-    runs-on: swift/ubuntu-latest # (or standard runs-on: ubuntu-latest)
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
